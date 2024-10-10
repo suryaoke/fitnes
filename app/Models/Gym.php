@@ -29,7 +29,10 @@ class Gym extends Model
         $this->attributes['name'] = $value;
         $this->attributes['slug'] = Str::slug($value);
     }
-
+    protected $casts = [
+        'open_time_at' => 'datetime:H:i', // format jam:menit
+        'closed_time_at' => 'datetime:H:i',
+    ];
     public function city(): BelongsTo
     {
         return $this->belongsTo(City::class, 'city_id');

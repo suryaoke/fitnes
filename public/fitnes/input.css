@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-color: #F6F8FE;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter';
+}
+
+.ClashDisplay-Bold{
+    font-family: 'ClashDisplay-Bold';
+}
